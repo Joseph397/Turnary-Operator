@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnary Operator</title>
+</head>
+<body>
+  <script>
+    const videos = [
+     "Pranking my sister, is she ok (gone wrong)",
+     "how to javascript",
+     "html tutorial",
+     "learning the piano",
+     "html basics",
+     "css",
+     "java",
+     "programing",
+     "ui/ux",
+   ];
+
+   const games = [
+     { title: "Mass Effect", rating: 9.5 },
+     { title: "League of Legends", rating: 5 },
+     { title: "Last of Us", rating: 10 },
+     { title: "God of war", rating: 10 },
+     { title: "WWE 2k20", rating: 4 }
+   ];
+  
+   const newVideos = videos.map(function(video){// Map,can return and save a value,good for modifying an array
+     //   if(video.length < 10) {
+     //       return video;
+     //   }else{
+     //     return 'nope';  // or do it more simply below
+  // Turnary Operator
+     return video.length < 10 ? video : 'nope'; // same as above with turnary operators
+     const searchTutorial = videos.find(function(video){
+         return video.includes('basics');
+   });
+
+   console.log(newVideos);
+
+   newVideos.push('Heyyyy');
+
+   console.log(newVideos);
+   </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
